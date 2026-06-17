@@ -1,5 +1,4 @@
 - hosts: localhost
-  become: yes
   tasks: 
    - name:  copying war file to tomcat
      copy:
