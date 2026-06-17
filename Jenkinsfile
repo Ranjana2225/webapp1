@@ -19,12 +19,10 @@ pipeline{
         sh 'mvn test'
       }
     }
-    stage('deploy with ansible')[
+    stage('deploy with ansible'){
       steps{
           sh 'ansible-playbook deploy.yml'
       }
       }
       }
       }
-        
-    
