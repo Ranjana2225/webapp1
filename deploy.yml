@@ -1,0 +1,8 @@
+- hosts: localhost
+  become: yes
+  tasks: 
+   - name:  copying war file to tomcat
+     copy:
+        src: target/webapp1.war
+        dest: /opt/tomcat3/webapps/webapp1.war
+       
